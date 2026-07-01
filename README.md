@@ -1,4 +1,4 @@
-# 🎯 Resume X AI — Decoded.
+#  Resume X AI — Decoded.
 
 [![Vercel Deployment](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://resumexai.online)
 [![Node.js Version](https://img.shields.io/badge/Node.js-v18%2B-green?style=for-the-badge&logo=node.js)](https://nodejs.org)
@@ -10,7 +10,7 @@
 
 ---
 
-## 🗺️ System Architecture
+##  System Architecture
 
 The following flowchart outlines the end-to-end data flow, illustrating the client-side parsing pipeline, serverless routing, AI generation, and email notification system:
 
@@ -51,7 +51,7 @@ graph TD
 
 ---
 
-## ⚡ Technical Highlights
+##  Technical Highlights
 
 * **Hybrid Client-Side OCR Engine:** Employs `pdf.js` for programmatic text extraction from PDF streams and `Tesseract.js` for on-the-fly Optical Character Recognition (OCR) on image-based resumes (`.png`, `.jpg`, `.webp`), shifting parsing overhead to the client.
 * **Privacy-First (Zero-Persistence) Policy:** Intentionally designed to process resumes in memory without database persistence. Candidate documents are parsed, evaluated, and discarded, complying with data privacy best practices.
@@ -61,7 +61,7 @@ graph TD
 
 ---
 
-## 🎨 Portal Layout & Pages
+##  Portal Layout & Pages
 
 As a high-fidelity Single-Page Application (SPA), the system organizes operations into discrete interactive zones:
 
@@ -86,7 +86,7 @@ As a high-fidelity Single-Page Application (SPA), the system organizes operation
 
 ---
 
-## 🔌 API Integrations
+##  API Integrations
 
 ### 1. Google Gemini API (`gemini-2.5-flash`)
 The core reasoning engine of Resume X AI. It performs deep semantic checks comparing the target job description with the extracted resume text.
@@ -109,7 +109,7 @@ Used for immediate transactional notifications without local SMTP configuration.
 
 ---
 
-## 📊 Data Models & API Schemas
+##  Data Models & API Schemas
 
 Since this platform is serverless and does not persist user records, data schemas define the JSON payloads transferred across endpoints.
 
@@ -145,7 +145,7 @@ Since this platform is serverless and does not persist user records, data schema
 
 ---
 
-## ⚙️ Local Setup & Deployment
+##  Local Setup & Deployment
 
 ### Prerequisites
 * **Node.js** (v18.0.0 or higher)
